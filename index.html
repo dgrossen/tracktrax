@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <link rel="stylesheet" type="text/css" href="include/main.css" />
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDhsotufh2kqyFtD0mGdh3XnY1mIUnSb8U&sensor=true">
+    </script>
+    <script type="text/javascript" src="include/jquery-1.9.1.min.js">
+    </script>
+    <script type="text/javascript" src="include/client.js">
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="route_selector">
+	  <div class="button blue"><a href="?route=701">Blue Line</a></div>
+	  <div class="button red"><a href="?route=703">Red Line</a></div>
+	  <div class="button green"><a href="?route=704">Green Line</a></div>
+    </div>
+    <div id="error"></div>
+    <div id="map_canvas"></div>
+    <div id="footer">
+         <div>Data is automatically refreshed every 30 seconds</div>
+	  <div>Disclaimer: UTA Trax data provided as is under it's <a href="http://developer.rideuta.com/DeveloperResources/TermsOfUse.aspx">Terms of Use</a></div>
+	  <div>TrackTrax.com by Dan Grossen</div>
+    </div>
+  </body>
+</html>

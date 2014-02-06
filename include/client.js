@@ -42,7 +42,7 @@ var map;
 		}
 
 		function getUtaData() {
-			var jqxhr = $.getJSON('http://tracktrax.com/test/getUtaData?jsoncallback=?', {route: route});
+			var jqxhr = $.getJSON('http://tracktrax.com/getUtaData?jsoncallback=?', {route: route});
 
 			jqxhr.done(utaDataHandler);
 			jqxhr.fail(utaDataErrorHandler);
